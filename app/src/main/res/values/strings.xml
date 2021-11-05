@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlumnoProyecto</string>
+    <string name="nombre"> Escriba un nombre</string>
+    <string name="nombre_label">Nombre</string>
+    <string name="detalle_label">Detalle</string>
+    <string name="activo">Activo</string>
+</resources>

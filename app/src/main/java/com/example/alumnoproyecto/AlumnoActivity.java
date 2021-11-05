@@ -24,7 +24,4 @@ public class AlumnoActivity extends AppCompatActivity {
             fm.beginTransaction().add(R.id.alumno_fragment_container, fragment).commit();
         }
     }
-
-
-
 }

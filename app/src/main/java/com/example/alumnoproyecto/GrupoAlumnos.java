@@ -25,7 +25,6 @@ public class GrupoAlumnos {
         return listaAlumnos;
     }
 
-
     public Alumno getAlumno(int matricula){
         for(Alumno alumno: listaAlumnos){
             if(alumno.getMatricula() == matricula){

@@ -49,13 +49,13 @@ public class AlumnoListaFragment extends Fragment {
 
         @Override
         public void onClick(View view) {
-            Log.d("Evento", "Entro a evento:" + alumnoHolder.getMatricula() );
-            Toast.makeText(getActivity(), alumnoHolder.getNombre()+ "he sido seleccionado!", Toast.LENGTH_SHORT).show();
+            //Log.d("Evento", "Entro a evento:" + alumnoHolder.getMatricula() );
+            //Toast.makeText(getActivity(), alumnoHolder.getNombre()+ "he sido seleccionado!", Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(getActivity(), AlumnoActivity.class);
+            Intent intent = new Intent(getActivity(), AlumnoPagerActivity.class);
             intent.putExtra(Constantes.ID_ALUMNO, alumnoHolder.getMatricula());
-            //startActivity(intent);
-            startActivityForResult(intent,Constantes.REQUEST_ALUMNO);
+            startActivity(intent);
+            //startActivityForResult(intent,Constantes.REQUEST_ALUMNO);
         }
     }
 

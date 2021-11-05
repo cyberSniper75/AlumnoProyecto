@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlumnoProyecto">
         <activity
+            android:name=".AlumnoPagerActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlumnoActivity"
             android:exported="true" />
         <activity

@@ -66,4 +66,11 @@ public class AlumnoFragment extends Fragment {
         getActivity().setResult(Activity.RESULT_OK, null);
     }
 
+    public static AlumnoFragment newInstanceFragment(int matricula){
+        AlumnoFragment fragment = new AlumnoFragment();
+        Bundle data = new Bundle();
+        data.putInt(Constantes.ID_ALUMNO,matricula);
+        fragment.setArguments(data);
+        return fragment;
+    }
 }

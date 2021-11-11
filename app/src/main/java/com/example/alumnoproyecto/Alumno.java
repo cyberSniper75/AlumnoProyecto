@@ -5,7 +5,7 @@ import java.util.Date;
 public class Alumno {
     private int matricula;
     private String nombre;
-    private Date fechaCumpleanos;
+//    private Date fechaCumpleanos;
     private boolean activo;
 
     public Alumno() {
@@ -27,13 +27,13 @@ public class Alumno {
         this.nombre = nombre;
     }
 
-    public Date getFechaCumpleanos() {
-        return fechaCumpleanos;
-    }
-
-    public void setFechaCumpleanos(Date fechaCumpleanos) {
-        this.fechaCumpleanos = fechaCumpleanos;
-    }
+//    public Date getFechaCumpleanos() {
+//        return fechaCumpleanos;
+//    }
+//
+//    public void setFechaCumpleanos(Date fechaCumpleanos) {
+//        this.fechaCumpleanos = fechaCumpleanos;
+//    }
 
     public boolean isActivo() {
         return activo;

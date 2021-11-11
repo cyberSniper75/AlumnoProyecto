@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class GrupoAlumnos {
-    private ArrayList<Alumno> listaAlumnos;
+    public static ArrayList<Alumno> listaAlumnos;
     private static GrupoAlumnos grupo = new GrupoAlumnos();
 
     private GrupoAlumnos() {
@@ -24,8 +24,15 @@ public class GrupoAlumnos {
             }
         }catch (JSONException je){
             je.printStackTrace();
-        }catch(Exception ex){
-            ex.printStackTrace();
+        }catch(NullPointerException ex){
+            listaAlumnos = new ArrayList<Alumno>();
+            for (int  i = 0 ; i<20; i++){
+                Alumno alumno = new Alumno();
+                alumno.setMatricula(i);
+                alumno.setNombre("Alumno #" + i);
+                alumno.setActivo(i%2==0);
+                listaAlumnos.add(alumno);
+            }
         }
     }
 

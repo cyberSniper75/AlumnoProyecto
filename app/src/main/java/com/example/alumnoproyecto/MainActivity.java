@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Toast.makeText(getApplicationContext(), "onStop called", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "onStop called", Toast.LENGTH_LONG).show();
     }
 
     private void loadJSON(){
